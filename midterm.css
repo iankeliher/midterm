@@ -1,3 +1,21 @@
-html {
-	background-color:green;
+div {
+	border: 1px solid red;
+}
+
+header {
+	border: 2px solid blue;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: helvetica;
+}
+
+header h1 {
+	font-size: 40px;
+}
+
+header h2 {
+	font-size: 27px;
+	margin-top: -20px;
 }
