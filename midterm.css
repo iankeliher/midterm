@@ -59,7 +59,7 @@ p {
 	height:300px;
 	position: fixed;
 	top: 0;
-	left: 37%;
+	left: 39%;
 	/*margin-left: auto;
 	margin-right: auto;*/
 }
@@ -68,8 +68,8 @@ p {
 
 header {
 	/*border: 2px solid blue;*/
-	background-color: #4a9c4a;
-	width: 400px;
+	/*background-color: #4a9c4a;
+	width: 400px;*/
 	padding: 40px 10px 40px 10px;
 	margin-top: 250px;
 	/*margin-bottom: 25px;*/
@@ -78,6 +78,7 @@ header {
 	text-align: center;
 	font-family: Munro;
 	color: white;
+	background-image: url('img/Shield_css.png');
 }
 
 
@@ -139,6 +140,7 @@ header, .summary {
 	float: left;
 	margin-top: 30%;
 	margin-left: 10%;
+	margin-bottom: 14%;
 }
 
 /*section:aside*/
