@@ -18,7 +18,7 @@
 /*all*/
 
 html {
-	background-color: green;
+	background-color: #4a9c4a;
 }
 
 h3, p, li {
@@ -42,9 +42,19 @@ p {
 .preamble, .explanation, .participation, .benefits, .requirements {
 	width: 400px;
 	background-color: black;
+	border-radius:25px;
 	opacity: .68;
 	color: white;
 	padding: 20px;
+}
+
+.extra1 {
+	background-image:url('img/link.jpeg');
+	background-repeat: no-repeat;
+	width:200px;
+	height:300px;
+	/*margin-left: auto;
+	margin-right: auto;*/
 }
 
 /*section:intro*/
