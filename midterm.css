@@ -1,6 +1,6 @@
 /* Html5 reset */
 @import url('reset.css');
-@import url('testterm.css');
+/*@import url('testterm.css');*/
 
 /* the real stoof*/
 
@@ -21,11 +21,14 @@ html {
 	background-color: #4a9c4a;
 }
 
-h3, p, li {
+
+p, li {
 	font-family: Chiaro;
+	font-size: 13px;
 }
 
 h3 {
+	font-family: Munro;
 	font-size: 23px;
 	margin-bottom: 15px;
 }
@@ -40,7 +43,7 @@ p {
 }
 
 .preamble, .explanation, .participation, .benefits, .requirements {
-	width: 400px;
+	width: 380px;
 	background-color: black;
 	border-radius:25px;
 	opacity: .68;
@@ -51,8 +54,12 @@ p {
 .extra1 {
 	background-image:url('img/link.jpeg');
 	background-repeat: no-repeat;
-	width:200px;
+	background-position: center;
+	width:300px;
 	height:300px;
+	position: fixed;
+	top: 0;
+	left: 37%;
 	/*margin-left: auto;
 	margin-right: auto;*/
 }
@@ -61,12 +68,12 @@ p {
 
 header {
 	/*border: 2px solid blue;*/
-	background-color: green;
+	background-color: #4a9c4a;
 	width: 400px;
 	padding: 40px 10px 40px 10px;
-	margin-top: 50px;
+	margin-top: 250px;
 	/*margin-bottom: 25px;*/
-	margin-left: auto;
+	/*margin-left: auto;*/
 	/*margin-right: auto;*/
 	text-align: center;
 	font-family: Munro;
@@ -84,9 +91,21 @@ header h2 {
 	margin-top: 0px;
 }
 
+header, .summary {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .summary {
 	width: 400px;
-	margin-left: auto;
+	margin-bottom: 150px;
+}
+
+.summary p {
+	font-family: Munro;
+	font-size: 20px;
+	text-align: center;
+	color: white;
 }
 
 .preamble {
