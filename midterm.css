@@ -1,21 +1,144 @@
-div {
-	border: 1px solid red;
+/* Html5 reset */
+@import url('reset.css');
+@import url('testterm.css');
+
+/* the real stoof*/
+
+@font-face
+		{
+		font-family: Munro, MunroNarrow, MunroSmall, CharlemagneRegular, Triforce, Chiaro;
+		src: url('fonts/munro/Munro.ttf', 
+		'fonts/munro/MunroNarrow.ttf', 
+		'fonts/munro/MunroSmall.ttf',
+		'fonts/Triforce.ttf',
+		'fonts/CharlemagneRegular.ttf'
+		'fonts/Chiaro.ttf')
+		}
+
+/*all*/
+
+html {
+	background-color: green;
 }
+
+h3, p, li {
+	font-family: Chiaro;
+}
+
+h3 {
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+	width: 400px;
+	background-color: black;
+	opacity: .68;
+	color: white;
+	padding: 20px;
+}
+
+/*section:intro*/
 
 header {
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
+	background-color: green;
 	width: 400px;
+	padding: 40px 10px 40px 10px;
+	margin-top: 50px;
+	/*margin-bottom: 25px;*/
 	margin-left: auto;
-	margin-right: auto;
+	/*margin-right: auto;*/
 	text-align: center;
-	font-family: helvetica;
+	font-family: Munro;
+	color: white;
 }
 
+
 header h1 {
-	font-size: 40px;
+	font-size: 50px;
 }
 
 header h2 {
-	font-size: 27px;
-	margin-top: -20px;
+	font-size: 30px;
+	font-family: MunroNarrow;
+	margin-top: 0px;
+}
+
+.summary {
+	width: 400px;
+	margin-left: auto;
+}
+
+.preamble {
+	margin-left: 10%;
+	float: left;
+}
+
+/*section:main*/
+
+.explanation {
+	margin-right: 10%;
+	margin-top: 30%;
+	float: right;
+}
+
+.participation {
+	float: left;
+	clear: left;
+	margin-left: 5%;
+	margin-top: 15%;
+}
+
+.benefits {
+	float: right;
+	clear: both;
+	margin-top: 10%;
+	margin-right: 5%;
+}
+
+.requirements {
+	float: left;
+	margin-top: 30%;
+	margin-left: 10%;
+}
+
+/*section:aside*/
+
+footer {
+	clear: both;
+}
+
+.sidebar {
+	clear:both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.design-selection, .design-archives, .design-resources {
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer, .sidebar h3, li {
+	font-size: 15px;
+	font-family: MunroSmall;
+	color: white;
+}
+
+
+@media all and (min-width: 1500px) {
+	html {
+		padding: 0 7% 0 7%; 
+	}
 }

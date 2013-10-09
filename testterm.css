@@ -1,0 +1,35 @@
+/* Html5 reset */
+
+
+/*section:intro*/
+
+.summary {
+	background-color: yellow;
+}
+
+.preamble {
+	background-color: yellow;
+}
+
+/*section:main*/
+
+.explanation {
+	background-color: pink;
+	/*opacity: .8;*/
+}
+
+.participation {
+	background-color: pink;
+}
+
+.benefits {
+	background-color: pink;
+}
+
+.requirements {
+	background-color: pink;
+}
+
+.sidebar {
+	background-color: red;
+}
