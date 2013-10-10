@@ -23,12 +23,12 @@ html {
 
 
 p, li {
-	font-family: Chiaro;
+	font-family: Chiaro, arial;
 	font-size: 13px;
 }
 
 h3 {
-	font-family: Munro;
+	font-family: Munro, Monaco, arial;
 	font-size: 23px;
 	margin-bottom: 15px;
 }
@@ -46,9 +46,23 @@ p {
 	width: 380px;
 	background-color: black;
 	border-radius:25px;
+	opacity: 0;
+	color: white;
+	padding: 20px;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+	width: 380px;
+	background-color: black;
+	border-radius:25px;
+	/*opacity: 0;*/
 	opacity: .68;
 	color: white;
 	padding: 20px;
+}
+
+.preamble:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
+	opacity: .68;
 }
 
 .extra1 {
@@ -59,8 +73,9 @@ p {
 	height:300px;
 	position: fixed;
 	top: 0;
-	left: 38%;
+	left: 40%;
 }
+
 
 /*section:intro*/
 
@@ -79,7 +94,7 @@ header h1 {
 
 header h2 {
 	font-size: 30px;
-	font-family: MunroNarrow;
+	font-family: MunroNarrow, Monaco, arial;
 	margin-top: 0px;
 }
 
@@ -94,29 +109,30 @@ header, .summary {
 }
 
 .summary p {
-	font-family: Munro;
+	font-family: Munro, Monaco, arial;
 	font-size: 20px;
 	text-align: center;
 	color: white;
 }
 
 .preamble {
-	margin-left: 10%;
+	margin-left: 15%;
 	float: left;
 }
 
 /*section:main*/
 
 .explanation {
+	margin-left: 8%;
 	margin-right: 10%;
-	margin-top: 30%;
-	float: right;
+	margin-top: 20%;
+	float: left;
 }
 
 .participation {
-	float: left;
+	float: right;
 	clear: left;
-	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 15%;
 }
 
@@ -124,12 +140,12 @@ header, .summary {
 	float: right;
 	clear: both;
 	margin-top: 10%;
-	margin-right: 5%;
+	margin-right: 22%;
 }
 
 .requirements {
 	float: left;
-	margin-top: 30%;
+	margin-top: 20%;
 	margin-left: 10%;
 	margin-bottom: 14%;
 }
@@ -138,23 +154,29 @@ header, .summary {
 
 footer {
 	clear: both;
+	margin: 15px;
 }
 
 .sidebar {
+	height: 150px;
 	clear:both;
-	margin-left: auto;
-	margin-right: auto;
+	padding-bottom: 30px;
+	border: 2px dotted white;
+	margin: 0px 15px 0px 15px;
 }
 
-.design-selection, .design-archives, .design-resources {
+.design-selection, .design-archives, .zen-resources {
 	float: left;
-	margin-left: auto;
-	margin-right: auto;
+	padding: 15px 15px 15px 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
 }
+
+.design-selection
 
 footer, .sidebar h3, li {
-	font-size: 15px;
-	font-family: MunroSmall;
+	font-size: 11px;
+	font-family: Munro, Monaco, arial;
 	color: white;
 }
 
@@ -162,5 +184,41 @@ footer, .sidebar h3, li {
 @media all and (min-width: 1500px) {
 	html {
 		padding: 0 7% 0 7%; 
+	}
+	
+	.extra1 {
+		left: 42%;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.preamble, .explanation, .participation, .benefits, .requirements {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+	
+	.extra1 {
+		left: 34%;
+	}
+	
+	.preamble, .explanation, .participation, .benefits, .requirements {
+	opacity: .68;
+	}
+	
+	footer {
+		text-align: center;
+	}
+	
+	.sidebar {
+	width: 380px;
+	height: 420px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	.design-selection, .design-archives, .zen-resources {
+	clear: left;
+	margin-bottom: 15px;
 	}
 }
