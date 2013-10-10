@@ -59,23 +59,18 @@ p {
 	height:300px;
 	position: fixed;
 	top: 0;
-	left: 39%;
-	/*margin-left: auto;
-	margin-right: auto;*/
+	left: 38%;
 }
 
 /*section:intro*/
 
 header {
-	
 	content: url('img/Shield_css.png');
+	margin-top: 45px;
+	margin-bottom: -180px;
 }
 
-/*header:after {
-	content: url('img/Shield_css.png');
-	position: absolute;
-	left: 50%;
-}*/
+
 
 
 header h1 {
