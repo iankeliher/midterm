@@ -67,19 +67,15 @@ p {
 /*section:intro*/
 
 header {
-	/*border: 2px solid blue;*/
-	/*background-color: #4a9c4a;
-	width: 400px;*/
-	padding: 40px 10px 40px 10px;
-	margin-top: 250px;
-	/*margin-bottom: 25px;*/
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
-	text-align: center;
-	font-family: Munro;
-	color: white;
-	background-image: url('img/Shield_css.png');
+	
+	content: url('img/Shield_css.png');
 }
+
+/*header:after {
+	content: url('img/Shield_css.png');
+	position: absolute;
+	left: 50%;
+}*/
 
 
 header h1 {
