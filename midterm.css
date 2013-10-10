@@ -116,22 +116,23 @@ header, .summary {
 }
 
 .preamble {
-	margin-left: 15%;
+	margin-left: 12%;
 	float: left;
 }
 
 /*section:main*/
 
 .explanation {
-	margin-left: 8%;
-	margin-right: 10%;
+	/*margin-left: 8%;*/
+	margin-right: 16%;
 	margin-top: 20%;
-	float: left;
+	float: right;
+	clear: left;
 }
 
 .participation {
 	float: right;
-	clear: left;
+	clear: right;
 	margin-right: 5%;
 	margin-top: 15%;
 }
