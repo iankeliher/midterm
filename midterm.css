@@ -348,3 +348,38 @@ footer, .sidebar h3, li {
 		background-image: url('img/zelda_grass_trees.png');	
 	}
 }
+
+@media all and (max-width: 750px) {
+	.preamble, .explanation, .participation, .benefits, .requirements {
+		width: auto;
+	}
+	
+	header {
+		content: url('img/small_header.png');
+		width: 50%;
+		margin-bottom: 50px;
+		margin-top: 150px;
+	}
+	
+	.summary {
+		width: auto;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	
+	.extra1 {
+		left: 5%;
+		background-size: 50%;
+	}
+
+	.sidebar {
+		width: auto;
+	}
+
+}
+
+@media all and (max-width: 750px and (orientation:landscape) {
+
+
+
+}
