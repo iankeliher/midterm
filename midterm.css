@@ -1,6 +1,5 @@
 /* Html5 reset */
 @import url('reset.css');
-/*@import url('testterm.css');*/
 
 /* the real stuff*/
 
@@ -144,6 +143,7 @@ p {
 	top: 2840px;
 	left: 210px;
 }
+
 
 /*section:intro*/
 
@@ -347,18 +347,19 @@ footer, .sidebar h3, li {
 	html {
 		background-image: url('img/zelda_grass_trees.png');	
 	}
-}
-
-@media all and (max-width: 750px) {
-	.preamble, .explanation, .participation, .benefits, .requirements {
-		width: auto;
-	}
 	
 	header {
 		content: url('img/small_header.png');
 		width: 50%;
 		margin-bottom: 50px;
 		margin-top: 150px;
+	}
+	
+}
+
+@media all and (max-width: 370px) {
+	.preamble, .explanation, .participation, .benefits, .requirements {
+		width: auto;
 	}
 	
 	.summary {
@@ -368,6 +369,7 @@ footer, .sidebar h3, li {
 	}
 	
 	.extra1 {
+		top: -70px;
 		left: 5%;
 		background-size: 50%;
 	}
@@ -378,8 +380,17 @@ footer, .sidebar h3, li {
 
 }
 
-@media all and (max-width: 750px and (orientation:landscape) {
+@media all and (max-width: 485px) and (orientation:landscape) {
 
-
+	.preamble, .explanation, .participation, .benefits, .requirements {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.extra1 {
+		top: -100px;
+		left: 20%;
+		background-size: 50%;
+	}
 
 }
