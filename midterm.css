@@ -2,7 +2,7 @@
 @import url('reset.css');
 /*@import url('testterm.css');*/
 
-/* the real stoof*/
+/* the real stuff*/
 
 @font-face
 		{
@@ -53,16 +53,16 @@ p {
 
 .preamble, .explanation, .participation, .benefits, .requirements {
 	width: 380px;
-	background-color: black;
+	background-color: #173217;
 	border-radius:25px;
-	/*opacity: 0;*/
-	opacity: .68;
+	opacity: 0;
 	color: white;
 	padding: 20px;
+	z-index: 2;
 }
 
 .preamble:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
-	opacity: .68;
+	opacity: 1;
 }
 
 .extra1 {
@@ -74,8 +74,72 @@ p {
 	position: fixed;
 	top: 0;
 	left: 40%;
+	z-index: 3;
 }
 
+.extra2, .extra3, .extra4, .extra5, .extra6 {
+	z-index: -1;
+}
+
+.extra2 {
+	background-image:url('img/heart.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 910px;
+	left: 230px;
+}
+
+.extra3 {
+	background-image:url('img/heart.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 1400px;
+	right: 280px;
+}
+
+.extra4 {
+	background-image:url('img/heart.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 1920px;
+	right: 170px;
+}
+
+.extra5 {
+	background-image:url('img/heart.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 2320px;
+	right: 380px;
+}
+
+.extra6 {
+	background-image:url('img/heart.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 2840px;
+	left: 210px;
+}
 
 /*section:intro*/
 
@@ -84,9 +148,6 @@ header {
 	margin-top: 45px;
 	margin-bottom: -180px;
 }
-
-
-
 
 header h1 {
 	font-size: 50px;
@@ -106,6 +167,9 @@ header, .summary {
 .summary {
 	width: 400px;
 	margin-bottom: 150px;
+	border-top: 2px dotted white;
+	border-bottom: 2px dotted white;
+	padding-top: 15px;
 }
 
 .summary p {
@@ -120,12 +184,13 @@ header, .summary {
 	float: left;
 }
 
+
 /*section:main*/
 
 .explanation {
 	/*margin-left: 8%;*/
 	margin-right: 16%;
-	margin-top: 20%;
+	margin-top: 16%;
 	float: right;
 	clear: left;
 }
@@ -141,12 +206,13 @@ header, .summary {
 	float: right;
 	clear: both;
 	margin-top: 10%;
-	margin-right: 22%;
+	margin-right: 25%;
 }
 
 .requirements {
 	float: left;
-	margin-top: 20%;
+	clear: right;
+	margin-top: 10%;
 	margin-left: 10%;
 	margin-bottom: 14%;
 }
@@ -162,7 +228,7 @@ footer {
 	height: 150px;
 	clear:both;
 	padding-bottom: 30px;
-	border: 2px dotted white;
+	border-top: 2px dotted white;
 	margin: 0px 15px 0px 15px;
 }
 
@@ -176,13 +242,13 @@ footer {
 .design-selection
 
 footer, .sidebar h3, li {
-	font-size: 11px;
+	font-size: 15px;
 	font-family: Munro, Monaco, arial;
 	color: white;
 }
 
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1400px) {
 	html {
 		padding: 0 7% 0 7%; 
 	}
@@ -192,7 +258,19 @@ footer, .sidebar h3, li {
 	}
 }
 
+@media all and (min-width: 1200px) {
+	.extra5 {
+		right: 450px; 
+		top: 2420px;
+	}
+}
+
 @media all and (max-width: 1000px) {
+	
+	.extra2, .extra3, .extra4, .extra5, .extra6 {
+		display:none;
+	}
+	
 	.preamble, .explanation, .participation, .benefits, .requirements {
 		margin-left: auto;
 		margin-right: auto;
@@ -204,7 +282,7 @@ footer, .sidebar h3, li {
 	}
 	
 	.preamble, .explanation, .participation, .benefits, .requirements {
-	opacity: .68;
+	opacity: 1;
 	}
 	
 	footer {
