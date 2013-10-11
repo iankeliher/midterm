@@ -17,18 +17,22 @@
 
 /*all*/
 
+abbr {
+	color: #b5efbd;
+}
+
 html {
-	background-color: #4a9c4a;
+	background-image: url('img/zelda_grass_lg.png');	
 }
 
 
 p, li {
-	font-family: Chiaro, arial;
+	font-family: Chiaro, arial, sans-serif;
 	font-size: 13px;
 }
 
 h3 {
-	font-family: Munro, Monaco, arial;
+	font-family: Munro, Monaco, arial, sans-serif;
 	font-size: 23px;
 	margin-bottom: 15px;
 }
@@ -155,7 +159,7 @@ header h1 {
 
 header h2 {
 	font-size: 30px;
-	font-family: MunroNarrow, Monaco, arial;
+	font-family: MunroNarrow, Monaco, arial, sans-serif;
 	margin-top: 0px;
 }
 
@@ -173,7 +177,7 @@ header, .summary {
 }
 
 .summary p {
-	font-family: Munro, Monaco, arial;
+	font-family: Munro, Monaco, arial, sans-serif;
 	font-size: 20px;
 	text-align: center;
 	color: white;
@@ -217,11 +221,19 @@ header, .summary {
 	margin-bottom: 14%;
 }
 
+.participation a, .requirements a {
+	color: #4a9c4a;
+}
+
 /*section:aside*/
 
 footer {
 	clear: both;
 	margin: 15px;
+}
+
+footer a {
+	font-family: Munro, Monaco, sans-serif;
 }
 
 .sidebar {
@@ -247,6 +259,16 @@ footer, .sidebar h3, li {
 	color: white;
 }
 
+.design-selection:after {
+	content: url('img/triforce_symbol.gif');
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin-top: 10px;
+}
+
+/*Responsive Design Elements*/
+
 
 @media all and (min-width: 1400px) {
 	html {
@@ -267,6 +289,10 @@ footer, .sidebar h3, li {
 
 @media all and (max-width: 1000px) {
 	
+	abbr {
+		color: white;
+	}
+	
 	.extra2, .extra3, .extra4, .extra5, .extra6 {
 		display:none;
 	}
@@ -275,6 +301,7 @@ footer, .sidebar h3, li {
 		margin-left: auto;
 		margin-right: auto;
 		float: none;
+		margin-bottom: 150px;
 	}
 	
 	.extra1 {
@@ -282,7 +309,7 @@ footer, .sidebar h3, li {
 	}
 	
 	.preamble, .explanation, .participation, .benefits, .requirements {
-	opacity: 1;
+		opacity: 1;
 	}
 	
 	footer {
@@ -290,14 +317,34 @@ footer, .sidebar h3, li {
 	}
 	
 	.sidebar {
-	width: 380px;
-	height: 420px;
-	margin-left: auto;
-	margin-right: auto;
-}
+		width: 380px;
+		height: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	.design-selection, .design-archives, .zen-resources {
-	clear: left;
-	margin-bottom: 15px;
+		clear: left;
+		margin-bottom: 15px;
+	}
+	
+	.design-selection:after {
+		display: none;
+	}
+	
+	.zen-resources:after {
+		content: url('img/triforce_symbol.gif');
+		height: 100px;
+		width: 100px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+}
+
+@media all and (max-width: 850px) {
+	html {
+		background-image: url('img/zelda_grass_trees.png');	
 	}
 }
